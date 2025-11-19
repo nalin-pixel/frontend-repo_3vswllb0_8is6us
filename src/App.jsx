@@ -1,18 +1,20 @@
+import CardsSection from './components/CardsSection'
+
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Subtle pattern overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.05),transparent_50%)]"></div>
 
-      <div className="relative min-h-screen flex items-center justify-center p-8">
-        <div className="max-w-2xl w-full">
+      <div className="relative min-h-screen flex flex-col items-center justify-start p-8">
+        <div className="max-w-5xl w-full">
           {/* Header with Flames icon */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 pt-6">
             <div className="inline-flex items-center justify-center mb-6">
               <img
                 src="/flame-icon.svg"
                 alt="Flames"
-                className="w-24 h-24 drop-shadow-[0_0_25px_rgba(59,130,246,0.5)]"
+                className="w-20 h-20 drop-shadow-[0_0_25px_rgba(59,130,246,0.5)]"
               />
             </div>
 
@@ -58,8 +60,11 @@ function App() {
             </div>
           </div>
 
+          {/* Five-card section */}
+          <CardsSection />
+
           {/* Footer */}
-          <div className="text-center">
+          <div className="text-center pb-8">
             <p className="text-sm text-blue-300/60">
               No coding required • Just describe what you want
             </p>
